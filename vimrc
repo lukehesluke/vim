@@ -1,4 +1,6 @@
 " Luke's personal vim file. Source using :so PATH/TO/DIR/vimrc
+execute pathogen#infect()
+
 set nocompatible
 filetype plugin indent on
 set nobackup
