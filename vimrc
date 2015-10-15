@@ -36,3 +36,11 @@ set guioptions-=T
 set guioptions+=e
 set guifont=Consolas:h8:cANSI
 colorscheme desert
+
+" Ctrl-T for new tab because I'm too lazy to change
+map <C-T> :tabnew<Return>
+
+" Load Ctrl-P plugin
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
