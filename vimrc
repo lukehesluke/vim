@@ -10,6 +10,9 @@ set backspace=indent,eol,start
 set whichwrap=<,>,h,l
 syntax on
 
+" Set ClojureScript files to Clojure filetype
+au BufNewFile,BufRead *.cljs set filetype=clojure
+
 " 4-space tabs. Tabs are expanded to spaces
 set expandtab
 set shiftwidth=4
