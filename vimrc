@@ -19,6 +19,13 @@ set shiftwidth=4
 set tabstop=4
 set softtabstop=4
 
+" 2-space tabs for JS / HTML because iunno
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+autocmd Filetype json setlocal ts=2 sts=2 sw=2
+autocmd Filetype scss setlocal ts=2 sts=2 sw=2
+autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
+
 " Get tab completion for vim commands
 set wildmenu
 set wildmode=list:longest
