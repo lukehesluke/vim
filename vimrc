@@ -41,7 +41,7 @@ vnoremap :%s/ :%s/\v
 " GUI options
 set guioptions-=T
 set guioptions+=e
-set guifont=Consolas:h8:cANSI
+set guifont=Monospace\ 8
 colorscheme desert
 
 " Ctrl-T for new tab because I'm too lazy to change
