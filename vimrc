@@ -1,5 +1,10 @@
 " Luke's personal vim file. Source using :so PATH/TO/DIR/vimrc
-execute pathogen#infect()
+
+" Load Pathogen
+filetype off
+call pathogen#infect()
+call pathogen#helptags()
+filetype plugin indent on
 
 set nocompatible
 filetype plugin indent on
@@ -25,6 +30,9 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype json setlocal ts=2 sts=2 sw=2
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2
 autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
+
+" Python 3 mode
+let g:pymode_python = 'python3'
 
 " Get tab completion for vim commands
 set wildmenu
