@@ -18,21 +18,25 @@ syntax on
 " Set ClojureScript files to Clojure filetype
 au BufNewFile,BufRead *.cljs set filetype=clojure
 
-" 4-space tabs. Tabs are expanded to spaces
+" 2-space tabs. Tabs are expanded to spaces
 set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set shiftwidth=2
+set tabstop=2
+set softtabstop=2
+
+autocmd Filetype python setlocal ts=2 sts=2 sw=2
 
 " 2-space tabs for JS / HTML because iunno
-autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
-autocmd Filetype json setlocal ts=2 sts=2 sw=2
-autocmd Filetype scss setlocal ts=2 sts=2 sw=2
-autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
+"autocmd Filetype html setlocal ts=2 sts=2 sw=2
+"autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
+"autocmd Filetype json setlocal ts=2 sts=2 sw=2
+"autocmd Filetype scss setlocal ts=2 sts=2 sw=2
+"autocmd Filetype yaml setlocal ts=2 sts=2 sw=2
+"autocmd Filetype python setlocal ts=2 sts=2 sw=2
 
 " Python 3 mode
 let g:pymode_python = 'python3'
+let g:pymode_lint_ignore = 'E111,W0311,E302'
 
 " Get tab completion for vim commands
 set wildmenu
