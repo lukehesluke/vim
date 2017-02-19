@@ -53,7 +53,7 @@ vnoremap :%s/ :%s/\v
 " GUI options
 set guioptions-=T
 set guioptions+=e
-set guifont=Monospace\ 8
+set guifont=Monospace\ 10
 colorscheme desert
 
 " Ctrl-T for new tab because I'm too lazy to change
