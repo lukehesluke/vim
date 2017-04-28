@@ -65,7 +65,7 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 let g:ctrlp_custom_ignore = {
-    \ 'dir': '\.git$\|node_modules$\|dist$\|bower_components$\|deps$'}
+    \ 'dir': '\.git$\|node_modules$\|dist$\|build$\|bower_components$\|deps$'}
 
 " vim-JSX plugin stuff
 let g:jsx_ext_required = 0
